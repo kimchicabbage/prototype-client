@@ -1,5 +1,5 @@
-import { Component } from "react";
 import { TileLayer } from "react-leaflet";
+import { Component } from "../../Component";
 
 interface MapTileProps {
   attribution?: string;
@@ -12,10 +12,6 @@ export class MapTile extends Component<MapTileProps> {
       attribution = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
       url = "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
     } = this.props;
-    return (
-      <div className="map-tile">
-        <TileLayer attribution={attribution} url={url} />
-      </div>
-    );
+    return <TileLayer attribution={attribution} url={url} />;
   }
 }

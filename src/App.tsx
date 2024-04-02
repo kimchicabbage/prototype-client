@@ -1,18 +1,19 @@
+import React from "react";
 import "./leaflet.css";
 
-import { Component } from "react";
-import { Header } from "./components/ui/header";
-import { Body } from "./components/ui/body";
-import { Footer } from "./components/ui/footer";
+import { Home } from "./pages";
+import { Body, Footer, Header } from "./components";
 
-class App extends Component {
+class App extends React.Component {
   render() {
     const title = "kimchicabbage prototype client app";
 
     return (
       <>
         <Header title={title} />
-        <Body />
+        <Body>
+          <Home />
+        </Body>
         <Footer />
       </>
     );

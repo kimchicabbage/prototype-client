@@ -1,4 +1,4 @@
-import { Component } from "react";
+import { Component } from "../../Component";
 
 interface CardTitleProps {
   children?: React.ReactNode;
@@ -7,6 +7,10 @@ interface CardTitleProps {
 export default class CardTitle extends Component<CardTitleProps> {
   render() {
     const { children } = this.props;
-    return <h2 className="card-title">{children && children}</h2>;
+    return (
+      <div className={this.getComponentClassName()} key={this.generateKey()}>
+        <h2 className="card-title">{children && children}</h2>
+      </div>
+    );
   }
 }

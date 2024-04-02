@@ -1,12 +1,16 @@
-import React, { Component } from "react";
+import { Component } from "../../Component";
 
 interface CardDescriptionProps {
-    children: React.ReactNode;
+  children: React.ReactNode;
 }
 
 export default class CardDescription extends Component<CardDescriptionProps> {
   render() {
     const { children } = this.props;
-    return <p className="card-description">{children}</p>;
+    return (
+      <div className={this.getComponentClassName()} key={this.generateKey()}>
+        <p>{children}</p>
+      </div>
+    );
   }
 }

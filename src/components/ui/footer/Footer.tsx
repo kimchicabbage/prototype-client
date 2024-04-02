@@ -1,9 +1,16 @@
-import { Component } from "react";
+import { Component } from "../../Component";
 
-interface FooterProps {}
+interface FooterProps {
+  children?: React.ReactNode;
+}
 
 export default class Footer extends Component<FooterProps> {
   render() {
-    return <div className="footer"></div>;
+    const { children } = this.props;
+    return (
+      <div className={this.getComponentClassName()} key={this.generateKey()}>
+        {children && children}
+      </div>
+    );
   }
 }
