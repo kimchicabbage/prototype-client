@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/ptorotype-client/static/css/main.ef4a9d6a.css",
-    "main.js": "/ptorotype-client/static/js/main.fd9ccf3b.js",
+    "main.js": "/ptorotype-client/static/js/main.52e44c1d.js",
     "static/js/453.b128318c.chunk.js": "/ptorotype-client/static/js/453.b128318c.chunk.js",
     "index.html": "/ptorotype-client/index.html",
     "main.ef4a9d6a.css.map": "/ptorotype-client/static/css/main.ef4a9d6a.css.map",
-    "main.fd9ccf3b.js.map": "/ptorotype-client/static/js/main.fd9ccf3b.js.map",
+    "main.52e44c1d.js.map": "/ptorotype-client/static/js/main.52e44c1d.js.map",
     "453.b128318c.chunk.js.map": "/ptorotype-client/static/js/453.b128318c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ef4a9d6a.css",
-    "static/js/main.fd9ccf3b.js"
+    "static/js/main.52e44c1d.js"
   ]
 }
