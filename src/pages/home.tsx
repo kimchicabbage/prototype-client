@@ -66,10 +66,10 @@ export default class Home extends Component {
     this.setPoints(points);
   }
 
-  async issueStamp({ id }: Point) {
+  async issueStamp(pointId: number, memberId: number) {
     const requestBody: PostStampApiRequest = {
-      member: { id: this.state.memberId },
-      point: { id },
+      member: { id: memberId },
+      point: { id: pointId },
       location: this.state.currentLocation,
     };
     await postStampApi(this.state.server, requestBody);
@@ -110,8 +110,6 @@ export default class Home extends Component {
     const title = `${id}: ${name}`;
     const description = `${name}입니다.`;
 
-    const location = this.state.currentLocation;
-
     const contents = (
       <Card>
         <CardHeader>
@@ -121,12 +119,7 @@ export default class Home extends Component {
         <CardContent>
           <button
             onClick={async () => {
-              const requestBody: PostStampApiRequest = {
-                member: { id: this.state.memberId },
-                point: { id },
-                location,
-              };
-              await postStampApi(this.state.server, requestBody);
+              await this.issueStamp(id, this.state.memberId);
             }}
           >
             Stamp!
