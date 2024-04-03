@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/ptorotype-client/static/css/main.ef4a9d6a.css",
-    "main.js": "/ptorotype-client/static/js/main.b6e2fc06.js",
-    "static/js/453.b128318c.chunk.js": "/ptorotype-client/static/js/453.b128318c.chunk.js",
-    "index.html": "/ptorotype-client/index.html",
-    "main.ef4a9d6a.css.map": "/ptorotype-client/static/css/main.ef4a9d6a.css.map",
-    "main.b6e2fc06.js.map": "/ptorotype-client/static/js/main.b6e2fc06.js.map",
-    "453.b128318c.chunk.js.map": "/ptorotype-client/static/js/453.b128318c.chunk.js.map"
+    "main.css": "/prototype-client/static/css/main.ef4a9d6a.css",
+    "main.js": "/prototype-client/static/js/main.fd18722b.js",
+    "static/js/453.5712cae1.chunk.js": "/prototype-client/static/js/453.5712cae1.chunk.js",
+    "index.html": "/prototype-client/index.html",
+    "main.ef4a9d6a.css.map": "/prototype-client/static/css/main.ef4a9d6a.css.map",
+    "main.fd18722b.js.map": "/prototype-client/static/js/main.fd18722b.js.map",
+    "453.5712cae1.chunk.js.map": "/prototype-client/static/js/453.5712cae1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ef4a9d6a.css",
-    "static/js/main.b6e2fc06.js"
+    "static/js/main.fd18722b.js"
   ]
 }
