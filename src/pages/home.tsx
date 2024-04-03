@@ -68,7 +68,7 @@ export default class Home extends Component {
 
   async issueStamp({ id }: Point) {
     const requestBody: PostStampApiRequest = {
-      member: { id: 1 },
+      member: { id: this.state.memberId },
       point: { id },
       location: this.state.currentLocation,
     };
@@ -122,7 +122,7 @@ export default class Home extends Component {
           <button
             onClick={async () => {
               const requestBody: PostStampApiRequest = {
-                member: { id: 1 },
+                member: { id: this.state.memberId },
                 point: { id },
                 location,
               };
